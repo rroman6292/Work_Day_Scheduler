@@ -10,7 +10,7 @@ var hour5 = $("#17");
 var time = moment();
 
 function setPlanner () {
-    $("#currentDay").text(moment().format("dddd. MMMM Do YYYY"));
+    $("#currentDay").text(moment().format("dddd MMMM Do YYYY"));
     $(".time-block").each(function () {
         var id = $(this).attr("id");
         var schedule = localStorage.getItem(id);
